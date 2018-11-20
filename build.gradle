@@ -277,10 +277,6 @@ subprojects {
 
   task docsJar(dependsOn: javadocJar)
 
-  javadoc.doFirst {
-    destinationDir.deleteDir()
-  }
-
   javadoc {
     options.charSet = 'UTF-8'
     options.docEncoding = 'UTF-8'
